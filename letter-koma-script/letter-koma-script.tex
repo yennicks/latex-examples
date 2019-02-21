@@ -1,0 +1,41 @@
+% Control window formats using the following parameters
+% NF = French - DINmtext = DIN 676 (German) for C6 and C6/5
+\documentclass[a4paper,dvipsnames,NF]{scrlttr2}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{blindtext}
+
+\setkomavar{fromname}{Herrn Werner Müller}
+\setkomavar{fromaddress}{Beethovenstraße 10\\ CH-1010 Basel}
+\setkomavar{fromphone}{+41 791 741 315}
+\setkomavar{fromemail}{wschmitt@example.com}
+\setkomavar{fromurl}{example.com}
+
+\setkomavar{place}{Basel}
+\setkomavar{date}{\today}
+\setkomavar{customer}{}
+\setkomavar{myref}{Nettoyage-01}
+\setkomavar{invoice}{}
+\setkomavar{subject}{Le nettoyage et l'entretien des rues}
+
+
+
+\KOMAoptions{backaddress=true,parskip=half*,enlargefirstpage=true,subject=centered,firstfoot=off,fromemail=true,fromphone=true}
+
+% Simple page numbers
+%\pagenumbering{arabic}
+%\renewcommand\pagemark{\usekomafont{pagenumber}\thepage}
+
+
+\begin{document}
+
+\begin{letter}{Mr Jean Willibrord\\ 10, route du Vin\\ L-1234 Echternach}
+
+\opening{Madame, Monsieur,}
+
+\blindtext
+
+\closing{Je vous prie d’agréer, Madame, Monsieur, l’expression de mes salutations distinguées.}
+
+\end{letter}
+\end{document}
